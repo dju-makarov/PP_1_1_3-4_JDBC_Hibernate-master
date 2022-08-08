@@ -93,6 +93,7 @@ public class UserDaoJDBCImpl implements UserDao {
                 user.setAge(set.getByte(4));
                 users.add(user);
             }
+
             connector.commit();
         } catch (SQLException e) {
             e.printStackTrace();
